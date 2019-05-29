@@ -29,8 +29,13 @@ formatter.step({
   "name": "User should be able to login successfully",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 7,
+  "name": "close the application Browser",
+  "keyword": "Then "
+});
 formatter.examples({
-  "line": 8,
+  "line": 9,
   "name": "",
   "description": "",
   "id": "test-facebook-scenario;test-with-login-credentials;",
@@ -40,7 +45,7 @@ formatter.examples({
         "username",
         "password"
       ],
-      "line": 9,
+      "line": 10,
       "id": "test-facebook-scenario;test-with-login-credentials;;1"
     },
     {
@@ -48,14 +53,14 @@ formatter.examples({
         "satheesh_kb",
         "Test@123"
       ],
-      "line": 10,
+      "line": 11,
       "id": "test-facebook-scenario;test-with-login-credentials;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 10,
+  "line": 11,
   "name": "Test with Login credentials",
   "description": "",
   "id": "test-facebook-scenario;test-with-login-credentials;;2",
@@ -81,11 +86,16 @@ formatter.step({
   "name": "User should be able to login successfully",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 7,
+  "name": "close the application Browser",
+  "keyword": "Then "
+});
 formatter.match({
   "location": "smokeTest.open_Firefox_and_start_Application()"
 });
 formatter.result({
-  "duration": 22272218844,
+  "duration": 8696681733,
   "status": "passed"
 });
 formatter.match({
@@ -102,14 +112,21 @@ formatter.match({
   "location": "smokeTest.Login(String,String)"
 });
 formatter.result({
-  "duration": 253192142,
+  "duration": 131679524,
   "status": "passed"
 });
 formatter.match({
   "location": "smokeTest.user_should_be_able_to_login_successfully()"
 });
 formatter.result({
-  "duration": 2771878868,
+  "duration": 1123155170,
+  "status": "passed"
+});
+formatter.match({
+  "location": "smokeTest.close_the_application_Browser()"
+});
+formatter.result({
+  "duration": 2406973865,
   "status": "passed"
 });
 });
